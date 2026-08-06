@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">Module 1: HTML Basics</h2>
+    <h3>=> what is html</h3>
+    <p>HTML ka full form hai: Hyper Text Markup Language</p><br>
+    <h3>=>HTML Boilerplate</h3>
+    <p>
+      Boilerplate ka matlab hota hai basic template ya starting code. <br />
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Hello Manas!&lt;/h1&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
+    </p>
+    <h3>=>HTML Structure</h3>
+
+<h4>1. &lt;!DOCTYPE html&gt;</h4>
+<p>
+<b>Definition:</b> Ye browser ko batata hai ki ye document HTML5 me likha gaya hai.
+</p>
+
+<h4>2. &lt;html&gt;</h4>
+<p>
+<b>Definition:</b> <code>&lt;html&gt;</code> tag HTML document ka main (root) tag hota hai.
+ Website ka pura HTML code isi tag ke andar likha jata hai.
+</p>
+
+<h4>3. &lt;head&gt;</h4>
+<p>
+<b>Definition:</b> <code>&lt;head&gt;</code> tag ke andar webpage ki information rakhi jati
+ hai, jaise <b>title</b>, <b>meta tags</b>, <b>CSS files</b> aur <b>JavaScript files</b>.
+  Iske andar ka content webpage par direct dikhai nahi deta.
+</p>
+
+<h4>4. &lt;body&gt;</h4>
+<p>
+<b>Definition:</b> <code>&lt;body&gt;</code> tag ke andar webpage ka sara visible content
+ hota hai, jaise <b>headings</b>, <b>paragraphs</b>, <b>images</b>, <b>links</b>, <b>tables</b>
+  aur <b>forms</b>. Jo bhi user website par dekhta hai, wo sab <code>&lt;body&gt;</code>
+   ke andar likha jata hai.
+</p><br>
+
+ <h3>=>Headings</h3>
+ <p><p>
+<b>Definition:</b> HTML me headings kisi webpage ka title ya important text dikhane ke liye use hoti hain. HTML me total <b>6 heading tags</b> hote hain, jo <code>&lt;h1&gt;</code> se <code>&lt;h6&gt;</code> tak hote hain.
+</p>
+
+<h2>1. &lt;h1&gt;</h2>
+<p>
+<b>Definition:</b> Ye sabse badi aur sabse important heading hoti hai. Ek webpage me normally sirf ek <code>&lt;h1&gt;</code> use karna best practice mana jata hai.
+</p>
+
+<h2>2. &lt;h2&gt;</h2>
+<p>
+<b>Definition:</b> Ye second level ki heading hoti hai. Iska use main heading ke andar alag sections banane ke liye kiya jata hai.
+</p>
+
+<h2>3. &lt;h3&gt;</h2>
+<p>
+<b>Definition:</b> Ye third level ki heading hoti hai. Iska use sub-section banane ke liye kiya jata hai.
+</p>
+
+<h2>4. &lt;h4&gt;</h2>
+<p>
+<b>Definition:</b> Ye fourth level ki heading hoti hai. Iska size <code>&lt;h3&gt;</code> se chhota hota hai.
+</p>
+
+<h2>5. &lt;h5&gt;</h2>
+<p>
+<b>Definition:</b> Ye fifth level ki heading hoti hai. Iska use kam important headings ke liye kiya jata hai.
+</p>
+
+<h2>6. &lt;h6&gt;</h2>
+<p>
+<b>Definition:</b> Ye sabse chhoti heading hoti hai. Iska use sabse kam important heading ke liye kiya jata hai.
+</p>
+
+<h2>Example</h2>
+
+<pre><code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+
+<h2>Output</h2>
+
+<p>
+Heading 1<br>
+Heading 2<br>
+Heading 3<br>
+Heading 4<br>
+Heading 5<br>
+Heading 6
+</p>
+
+<h2>Important Points</h2>
+
+<ul>
+    <li>HTML me total 6 heading tags hote hain.</li>
+    <li><code>&lt;h1&gt;</code> sabse badi heading hoti hai.</li>
+    <li><code>&lt;h6&gt;</code> sabse chhoti heading hoti hai.</li>
+    <li>Heading sirf size ke liye nahi, content ki importance batane ke liye bhi use hoti hai.</li>
+    <li>SEO ke liye <code>&lt;h1&gt;</code> bahut important hoti hai.</li>
+</ul></p>
+
+ <h3>=>Paragraph</h3>
+ <p><p>
+<b>Definition:</b> HTML me paragraph likhne ke liye <code>&lt;p&gt;</code> tag ka use kiya jata hai. Is tag ke andar hum normal text ya information likhte hain.
+</p>
+
+<h2>1. &lt;p&gt;</h2>
+
+<p>
+<b>Definition:</b> <code>&lt;p&gt;</code> tag webpage par ek paragraph create karta hai. Browser iske upar aur niche automatically thodi space (margin) de deta hai, jisse content padhne me aasaan lagta hai.
+</p>
+
+<h2>Example</h2>
+
+<pre><code>
+&lt;p&gt;Hello, My name is Manas.&lt;/p&gt;
+
+&lt;p&gt;I am learning HTML.&lt;/p&gt;
+</code></pre>
+
+<h2>Output</h2>
+
+<p>
+Hello, My name is Manas.
+</p>
+
+<p>
+I am learning HTML.
+</p>
+
+<h2>Important Points</h2>
+
+<ul>
+    <li><code>&lt;p&gt;</code> tag normal text likhne ke liye use hota hai.</li>
+    <li>Har paragraph apni nayi line se start hota hai.</li>
+    <li>Browser paragraph ke upar aur niche automatically space add karta hai.</li>
+    <li>Paragraph ke andar text, links, images aur kuch inline elements bhi use kiye ja sakte hain.</li>
+</ul>
+
+<h2>Note</h2>
+
+<p>
+Agar tum paragraph ke andar multiple spaces ya Enter dabaoge, to browser unhe ignore kar dega. Browser extra spaces aur extra line breaks ko ek hi space ki tarah show karta hai.
+</p>
+
+<h2>Example</h2>
+
+<pre><code>
+&lt;p&gt;
+Hello
+
+
+I am
+
+
+Learning HTML
+&lt;/p&gt;
+</code></pre>
+
+<h2>Browser Output</h2>
+
+<p>
+Hello I am Learning HTML
+</p>
+
+<p>
+Agar tum line break dikhana chahte ho, to <code>&lt;br&gt;</code> tag ka use karo.
+</p></p>
+<h3>=>Comments</h3>
+<p>
+
+<p>
+<b>Definition:</b> HTML me comments ka use code ke baare me notes ya explanation likhne ke liye kiya jata hai. Comments browser me dikhai nahi dete, sirf developer ko dikhte hain.
+</p>
+
+<h3>1. HTML Comment Syntax</h3>
+
+<p>
+<b>Definition:</b> HTML comment <code>&lt;!--</code> se start hota hai aur <code>--&gt;</code> se end hota hai.
+</p>
+
+<h3>Syntax</h3>
+
+<pre><code>
+&lt;!-- This is a comment --&gt;
+</code></pre>
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;h1&gt;Welcome&lt;/h1&gt;
+
+&lt;!-- Ye heading website ka main title hai --&gt;
+
+&lt;p&gt;I am learning HTML.&lt;/p&gt;
+</code></pre>
+
+<h3>Output</h3>
+
+<p>
+Welcome
+</p>
+
+<p>
+I am learning HTML.
+</p>
+
+<p>
+<b>Note:</b> Comment browser me show nahi hoga.
+</p>
+
+<h3>Comments ka Use</h3>
+
+<ul>
+    <li>Code ko explain karne ke liye.</li>
+    <li>Important notes likhne ke liye.</li>
+    <li>Kisi code ko temporary disable (hide) karne ke liye.</li>
+    <li>Code ko padhne aur samajhne me aasani hoti hai.</li>
+</ul>
+
+<h3>Example (Code Hide Karna)</h3>
+
+<pre><code>
+&lt;h1&gt;Hello&lt;/h1&gt;
+
+&lt;!--
+&lt;p&gt;Ye paragraph abhi browser me show nahi hoga.&lt;/p&gt;
+--&gt;
+</code></pre>
+
+<h3>Browser Output</h3>
+
+<p>
+Hello
+</p>
+
+<p>
+Sirf <code>&lt;h1&gt;</code> dikhai dega. Comment ke andar wala code browser ignore kar dega.
+</p>
+
+<h2>Important Points</h2>
+
+<ul>
+    <li>Comment browser me dikhai nahi deta.</li>
+    <li>Comment sirf developer ke liye hota hai.</li>
+    <li>HTML comment <code>&lt;!--</code> se start aur <code>--&gt;</code> se end hota hai.</li>
+    <li>Comments website ke output ko affect nahi karte.</li>
+</ul></p>
+  </body>
+</html>
