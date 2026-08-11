@@ -333,5 +333,269 @@
             style="max-width: 100%; height: auto;"
         >
 
+      <h2 style="text-align: center;">🟢 Module 6: Tables</h2>
+
+
+          <table border="1">
+
+        <!-- Caption -->
+        <caption>Student Result</caption>
+
+        <!-- Header -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <!-- Body -->
+        <tbody>
+
+            <!-- Row 1 -->
+            <tr>
+                <td rowspan="2">Manas</td>
+                <td>HTML</td>
+                <td>90</td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>CSS</td>
+                <td>85</td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+                <td>Rahul</td>
+                <td>HTML</td>
+                <td>80</td>
+            </tr>
+
+        </tbody>
+
+        <!-- Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Students</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+        </table>
+        <br>
+
+        <h2 style="text-align: center;">🟢 Module 7: Forms</h2>
+
+        <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Text Input -->
+        <label for="name">Full Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+        >
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            minlength="8"
+            required
+        >
+        <br><br>
+
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="60"
+            required
+        >
+        <br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+        >
+        <br><br>
+
+        <!-- Radio Button -->
+        <label>Gender:</label>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+        >
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Female</label>
+
+        <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="other"
+        >
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>Skills:</label>
+
+        <input
+            type="checkbox"
+            id="html"
+            name="skills"
+            value="html"
+        >
+        <label for="html">HTML</label>
+
+        <input
+            type="checkbox"
+            id="css"
+            name="skills"
+            value="css"
+        >
+        <label for="css">CSS</label>
+
+        <input
+            type="checkbox"
+            id="javascript"
+            name="skills"
+            value="javascript"
+        >
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+        <!-- Select and Option -->
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="bsc-it">B.Sc IT</option>
+            <option value="bca">BCA</option>
+            <option value="btech">B.Tech</option>
+            <option value="mca">MCA</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="address">Address:</label>
+        <br>
+
+        <textarea
+            id="address"
+            name="address"
+            rows="5"
+            cols="40"
+            placeholder="Enter your address"
+        ></textarea>
+
+        <br><br>
+
+        <!-- File Upload -->
+        <label for="resume">Upload Resume:</label>
+        <input
+            type="file"
+            id="resume"
+            name="resume"
+        >
+
+        <br><br>
+
+        <!-- Range -->
+        <label for="skill">HTML Skill Level:</label>
+
+        <input
+            type="range"
+            id="skill"
+            name="skill"
+            min="0"
+            max="100"
+        >
+
+        <br><br>
+
+        <!-- Color -->
+        <label for="color">Choose Favorite Color:</label>
+
+        <input
+            type="color"
+            id="color"
+            name="color"
+        >
+
+        <br><br>
+
+        <!-- Search -->
+        <label for="search">Search:</label>
+
+        <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search here..."
+        >
+
+        <br><br>
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+
+        <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com"
+        >
+
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    </table>
   </body>
 </html>
