@@ -944,5 +944,248 @@
         <p>© 2026 Ahmedabad Cricket Tournament</p>
     </footer>
 
+    <h2 style="text-align: center;">🟢 Module 14: HTML5 APIs</h2>
+
+     🟢 Module 14: HTML5 APIs (Introduction)
+
+
+         <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .box {
+            width: 150px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #dragBox {
+            background-color: lightblue;
+            cursor: grab;
+        }
+
+        #dropBox {
+            background-color: lightgreen;
+        }
+
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML5 APIs Demo</h1>
+
+
+    <!-- 1. Local Storage -->
+    <h2>1. Local Storage</h2>
+
+    <button onclick="saveName()">Save Name</button>
+    <button onclick="showName()">Show Name</button>
+
+    <p id="nameResult"></p>
+
+
+    <!-- 2. Session Storage -->
+    <h2>2. Session Storage</h2>
+
+    <button onclick="saveCourse()">Save Course</button>
+    <button onclick="showCourse()">Show Course</button>
+
+    <p id="courseResult"></p>
+
+
+    <!-- 3. Geolocation -->
+    <h2>3. Geolocation</h2>
+
+    <button onclick="getLocation()">Get My Location</button>
+
+    <p id="locationResult"></p>
+
+
+    <!-- 4. Drag and Drop -->
+    <h2>4. Drag & Drop</h2>
+
+    <div class="box" id="dragBox"
+         draggable="true"
+         ondragstart="drag(event)">
+        Drag Me
+    </div>
+
+    <div class="box" id="dropBox"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)">
+        Drop Here
+    </div>
+
+
+    <!-- 5. Canvas -->
+    <h2>5. Canvas</h2>
+
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+
+
+    <!-- 6. SVG -->
+    <h2>6. SVG</h2>
+
+    <svg width="300" height="150">
+
+        <circle
+            cx="75"
+            cy="75"
+            r="50"
+            fill="blue">
+        </circle>
+
+        <rect
+            x="150"
+            y="35"
+            width="100"
+            height="80"
+            fill="green">
+        </rect>
+
+    </svg>
+
+
+    <script>
+
+        // -------------------------
+        // 1. LOCAL STORAGE
+        // -------------------------
+
+        function saveName() {
+
+            localStorage.setItem("name", "Manas");
+
+            alert("Name Saved!");
+        }
+
+        function showName() {
+
+            let name = localStorage.getItem("name");
+
+            document.getElementById("nameResult").innerHTML =
+                "Name: " + name;
+        }
+
+
+        // -------------------------
+        // 2. SESSION STORAGE
+        // -------------------------
+
+        function saveCourse() {
+
+            sessionStorage.setItem("course", "B.Sc IT");
+
+            alert("Course Saved!");
+        }
+
+        function showCourse() {
+
+            let course = sessionStorage.getItem("course");
+
+            document.getElementById("courseResult").innerHTML =
+                "Course: " + course;
+        }
+
+
+        // -------------------------
+        // 3. GEOLOCATION
+        // -------------------------
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+                    showPosition,
+                    showError
+                );
+
+            } else {
+
+                document.getElementById("locationResult").innerHTML =
+                    "Geolocation is not supported.";
+            }
+        }
+
+
+        function showPosition(position) {
+
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
+
+            document.getElementById("locationResult").innerHTML =
+                "Latitude: " + latitude +
+                "<br>Longitude: " + longitude;
+        }
+
+
+        function showError() {
+
+            document.getElementById("locationResult").innerHTML =
+                "Location permission denied.";
+        }
+
+
+        // -------------------------
+        // 4. DRAG & DROP
+        // -------------------------
+
+        function allowDrop(event) {
+
+            event.preventDefault();
+        }
+
+
+        function drag(event) {
+
+            event.dataTransfer.setData(
+                "text",
+                event.target.id
+            );
+        }
+
+
+        function drop(event) {
+
+            event.preventDefault();
+
+            let data = event.dataTransfer.getData("text");
+
+            event.target.appendChild(
+                document.getElementById(data)
+            );
+        }
+
+
+        // -------------------------
+        // 5. CANVAS
+        // -------------------------
+
+        let canvas =
+            document.getElementById("myCanvas");
+
+        let ctx = canvas.getContext("2d");
+
+        // Rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(30, 30, 100, 70);
+
+        // Circle
+        ctx.beginPath();
+        ctx.arc(220, 65, 35, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+
+    </script>
   </body>
 </html>
