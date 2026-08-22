@@ -67,3 +67,41 @@ h2::after {
 p::first-letter {
     font-size: 20px;
 }
+body {
+    font-size: 16px;
+}
+
+.box {
+    margin: 2rem auto; 
+    width: 80%;
+    height: 50vh;
+    padding: 2em;
+    margin: 2rem;
+    background-color: lightblue;
+    border: 3px solid #0000ff;
+}
+
+h1 {
+    color: red;
+    font-size: 5vw;
+}
+
+.text {
+    color: rgb(0, 128, 0);
+    font-size: 2rem;
+    letter-spacing: 0.5ch;
+}
+
+.opacity {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: hsl(60, 18%, 55%);
+    font-size: 3vmin;
+    opacity: 0.8;
+    padding: 1em;
+}
+
+.box::after {
+    content: "HSL + HSLA + vmax";
+    color: hsla(240, 100%, 50%, 0.7);
+    font-size: 2vmax;
+}
