@@ -161,3 +161,91 @@ p {
     white-space: nowrap;
     text-shadow: 1px 1px 2px gray;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.hero {
+    width: 80%;
+    height: 300px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-image: url("https://images.unsplash.com/photo-1500534623283-312aade485b7");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    box-sizing: border-box;
+}
+
+.gradient-box {
+    width: 80%;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+    color: white;
+}
+
+.radial-box {
+    width: 80%;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+
+    background: radial-gradient(circle, #ffffff, #87ceeb, #4169e1);
+
+    color: #111;
+}
+
+.conic-box {
+    width: 80%;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+
+    background: conic-gradient(
+        #ff0000,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #ff00ff,
+        #ff0000
+    );
+
+    color: white;
+}
+
+.multi-box {
+    width: 80%;
+    height: 250px;
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/stardust.png"),
+        linear-gradient(135deg, #141e30, #243b55);
+
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center, center;
+
+    color: white;
+    text-align: center;
+}
