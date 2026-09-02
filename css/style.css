@@ -703,3 +703,54 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+.module12-section {
+    width: 85%;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.module12-title {
+    margin-bottom: 30px;
+}
+
+.module12-card {
+    width: 300px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid #555;
+    border-radius: 10px;
+
+    transition-property: width, background-color, transform;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.module12-card:hover {
+    width: 400px;
+    background-color: #90caf9;
+    transform: translateY(-10px);
+}
+
+.module12-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #263238;
+    color: white;
+    cursor: pointer;
+
+    transition-property: background-color, transform;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+}
+
+.module12-button:hover {
+    background-color: #1565c0;
+    transform: scale(1.1);
+}
